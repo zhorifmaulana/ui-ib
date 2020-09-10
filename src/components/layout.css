@@ -40,12 +40,20 @@ a {
   color: #aeaeae;
 }
 
+a:hover {
+  opacity: 0.75;
+}
+
 p {
   line-height: 1.3;
 }
 
+#all-wrapper {
+  padding-top: 10px;
+}
+
 .layout {
-  max-width: 1250px;
+  max-width: 1300px;
   padding-left: 24px;
   padding-right: 24px;
   margin: auto;

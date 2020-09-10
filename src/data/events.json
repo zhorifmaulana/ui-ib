@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "battlefield-masterclass",
+    "name": "Battlefield & Masterclass",
+    "shortdesc": "UX is cool. Let's not make it boring",
+    "topBackground": "event_1_topbg.png",
+    "color": "#31B057",
+    "longdesc": "Kompetisi UX dimana para UX talents dapat mengadu kemampuan dan mendapatkan kelas ekslusif UX design bersama para expert.",
+    "guidebookPath": "/guidebook",
+    "video": "",
+    "timelineImage": "event_1_timeline.png",
+    "whyTitle": "Why you should join the battlefield?",
+    "whyDesc": [
+      {
+        "photo": "event_1_why_1.png",
+        "desc": "Won A Prize Worth Rp18 Mio"
+      },
+      {
+        "photo": "event_1_why_2.png",
+        "desc": "Get A Scholarship worth Rp28 Mio"
+      },
+      {
+        "photo": "event_1_why_3.png",
+        "desc": "Challenge yourself and build your resume !"
+      }
+    ],
+    "faqList": [
+      {
+        "title": "Before the battlefield",
+        "content": "Meow meow meow meow. Why you should join the battlefield?"
+      },
+      {
+        "title": "D-Day battlefield",
+        "content": "Lorem ipsum dolor sit amet. UX is cool. Let's not make it meow"
+      },
+      {
+        "title": "After the battlefield",
+        "content": "Lorem ipsum dolor sit amet. alents dapat mengadu kemampuan dan mendapatka"
+      }
+    ]
+  }
+]

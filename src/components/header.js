@@ -29,6 +29,10 @@ const StyledHeader = styled.header`
       }
     }
 
+    .logo-flex:hover {
+      opacity: 1;
+    }
+
     .navbar-right {
       display: flex;
       align-items: center;
