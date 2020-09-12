@@ -58,3 +58,32 @@ p {
   padding-right: 24px;
   margin: auto;
 }
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.navbar-overlay .MuiPaper-root {
+  background-color: black;
+}
+
+.navbar-overlay .MuiIconButton-root {
+  color: #aeaeae;
+  margin-top: 9px;
+  margin-bottom: 6px;
+}
+
+.navbar-overlay .MuiDivider-root {
+  background-color: rgba(174, 174, 174, 0.6);
+}
+
+.navbar-overlay.MuiDrawer-root > .MuiDrawer-paper {
+  width: 260px;
+}
+
+@media screen and (max-width: 400px) {
+  .navbar-overlay.MuiDrawer-root > .MuiDrawer-paper {
+    width: 70%;
+    min-width: 225px;
+  }
+}

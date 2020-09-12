@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            viewPortScale
           }
         }
       }
@@ -52,6 +53,10 @@ function SEO({ description, lang, meta, title }) {
           content: `website`,
         },
         {
+          name: `viewport`,
+          content: site.siteMetadata.viewPortScale,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
@@ -73,7 +78,7 @@ function SEO({ description, lang, meta, title }) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `id`,
   meta: [],
   description: ``,
 }

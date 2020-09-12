@@ -12,13 +12,13 @@ import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, noFooter }) => {
   return (
     <>
       <Header />
       <div id="all-wrapper">
         <main>{children}</main>
-        <Footer />
+        {noFooter || <Footer />}
       </div>
     </>
   )
@@ -26,6 +26,11 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  noFooter: PropTypes.bool
+}
+
+Layout.defaultProps = {
+  noFooter: false
 }
 
 export default Layout

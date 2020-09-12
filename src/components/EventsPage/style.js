@@ -38,7 +38,7 @@ export const Styles = styled.div`
 
       h1.innov-battle {
         max-width: 400px;
-        margin-bottom: 0;
+        margin-bottom: .5rem;
       }
     }
 
@@ -88,7 +88,9 @@ export const Styles = styled.div`
         background: ${props => props.theme.eventColor};
         border: 2px solid ${props => props.theme.eventColor};
         margin-left: 1rem;
-        margin=right: 1rem;
+        margin-right: 1rem;
+        margin-top: .4rem;
+        margin-bottom: .4rem;
         width: 175px;
       }
 
@@ -136,6 +138,68 @@ export const Styles = styled.div`
     h1 {
       text-align: center;
       padding-bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .top-section {
+      .big-logo-wrapper {
+        .big-logo {
+          width: 180px;
+        }
+
+        h1, h1.innov-battle {
+          font-size: 2.75rem;
+          max-width: 275px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .top-section {
+      .big-logo-wrapper {
+        .big-logo {
+          width: 140px;
+          padding-left: .5rem;
+        }
+
+        h1, h1.innov-battle {
+          font-size: 2rem;
+          max-width: 225px;
+        }
+      }
+
+      .big-desc {
+        font-size: 1.4rem;
+      }
+    }
+
+    .desc-section {
+      .long-desc {
+        font-size: 1.25rem;
+      }
+    }
+
+    .why-section {
+      .why-list {
+        flex-wrap: wrap;
+
+        .one-why {
+          width: 80%;
+          h2 {
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .top-section .big-logo-wrapper {
+      h1, h1.innov-battle {
+        font-size: 1.6rem;
+      }
     }
   }
 `

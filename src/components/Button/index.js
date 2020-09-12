@@ -34,6 +34,11 @@ const StyledButton = styled.button`
   &:hover {
     opacity: 0.75;
   }
+
+  &:disabled {
+    opacity: 0.75;
+    cursor: unset;
+  }
 `
 
 const Button = props => {

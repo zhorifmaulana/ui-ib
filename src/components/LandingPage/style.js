@@ -35,7 +35,7 @@ export const Styles = styled.div`
 
       h1 {
         font-size: 4.1rem;
-        max-width: 400px;
+        max-width: 350px;
         margin-top: 0;
         margin-bottom: 1rem;
         letter-spacing: 3px;
@@ -187,6 +187,100 @@ export const Styles = styled.div`
 
     button {
       margin-top: .5rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .top-landing {
+      .big-logo-wrapper {
+        .big-logo {
+          width: 180px;
+          margin-right: 1rem;
+        }
+
+        h1 {
+          font-size: 3.5rem;
+          max-width: 300px;
+        }
+      }
+    }
+
+    .lp-events {
+      flex-wrap: wrap;
+
+      .event-one, .event-two {
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        min-height: 225px;
+      }
+
+      .event-one {
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+
+      .event-two {
+        margin: 0;
+      }
+    }
+
+    .about-section {
+      flex-direction: column-reverse;
+
+      & > div:first-of-type {
+        width: 100%;
+        padding: 0;
+      }
+
+      & > div:last-of-type {
+        width: 400px;
+        max-width: 100%;
+        padding: 0;
+        margin: auto;
+        padding-bottom: 2rem;
+      }
+    }
+
+    .last-events {
+      .flex {
+        flex-wrap: wrap;
+
+        .lastevent-big {
+          width: 96%;
+          margin-left: 2%;
+          margin-right: 2%;
+        }
+      }
+
+      .flex-small {
+        width: 100%;
+
+        .lastevent-small {
+          width: 46%;
+          margin-left: 2%;
+          margin-right: 2%;
+        }
+
+        .lastevent-small:nth-of-type(1), .lastevent-small:nth-of-type(2) {
+          margin-bottom: 20px;
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .innovation-magazine {
+      & > div:last-of-type {
+        width: 275px;
+        max-width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .top-landing .big-logo-wrapper h1 {
+      font-size: 2.4rem;
+      max-width: 230px;
     }
   }
 `
