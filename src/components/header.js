@@ -12,7 +12,6 @@ import MenuIcon from '@material-ui/icons/Menu'
 import ChevronRightIcon from '@material-ui/icons/ChevronLeft'
 
 import Image from "./image"
-import Button from "./Button"
 
 const StyledHeader = styled.header`
   .navbar-flex {
@@ -83,8 +82,12 @@ const navList = [
     to: "/"
   },
   {
-    name: "Battlefield & Masterclass",
-    to: "/battlefield-masterclass"
+    name: "Battlefield",
+    to: "/battlefield"
+  },
+  {
+    name: "Masterclass",
+    to: "/masterclass"
   },
   {
     name: "Exhibition",
@@ -110,7 +113,6 @@ const Header = () => {
               {name}
             </Link>
           ))}
-          <Button to="/signin" className="small">Sign In</Button>
         </div>
         <div className="navbar-mobile">
           <IconButton
@@ -147,12 +149,6 @@ const Header = () => {
             </Link>
           ))}
         </List>
-        <Divider />
-        <Link to="/signin">
-          <ListItem button>
-            <ListItemText primary="Sign In" />
-          </ListItem>
-        </Link>
       </SwipeableDrawer>
     </StyledHeader>
   )

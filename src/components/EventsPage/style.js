@@ -5,62 +5,7 @@ export const Styles = styled.div`
     color: ${props => props.theme.eventColor};
   }
 
-  .top-section {
-    background: url(${props => props.theme.topBgSrc}) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 30px;
-    padding-top: 120px;
-    padding-bottom: 110px;
-
-    .big-logo-wrapper {
-      display: flex;
-      text-align: left;
-      justify-content: center;
-      align-items: center;
-
-      .big-logo {
-        width: 210px;
-        margin-right: 1rem;
-      }
-
-      h1 {
-        font-size: 3.5rem;
-        margin-top: 0;
-        margin-bottom: 1rem;
-        letter-spacing: 3px;
-      }
-
-      h1.innov-battle {
-        max-width: 400px;
-        margin-bottom: .5rem;
-      }
-    }
-
-    .big-desc {
-      text-align: center;
-      padding-top: 50px;
-      font-size: 1.8rem;
-    }
-  }
-
   .desc-section {
-    .long-desc {
-      padding-top: 50px;
-      padding-bottom: 40px;
-      font-size: 1.5rem;
-      font-style: italic;
-      line-height: 1.4;
-      max-width: 600px;
-      margin: auto;
-      text-align: center;
-    }
-
     .learn-more-register {
       text-align: center;
 
@@ -141,46 +86,7 @@ export const Styles = styled.div`
     }
   }
 
-  @media screen and (max-width: 900px) {
-    .top-section {
-      .big-logo-wrapper {
-        .big-logo {
-          width: 180px;
-        }
-
-        h1, h1.innov-battle {
-          font-size: 2.75rem;
-          max-width: 275px;
-        }
-      }
-    }
-  }
-
   @media screen and (max-width: 550px) {
-    .top-section {
-      .big-logo-wrapper {
-        .big-logo {
-          width: 140px;
-          padding-left: .5rem;
-        }
-
-        h1, h1.innov-battle {
-          font-size: 2rem;
-          max-width: 225px;
-        }
-      }
-
-      .big-desc {
-        font-size: 1.4rem;
-      }
-    }
-
-    .desc-section {
-      .long-desc {
-        font-size: 1.25rem;
-      }
-    }
-
     .why-section {
       .why-list {
         flex-wrap: wrap;
@@ -198,7 +104,11 @@ export const Styles = styled.div`
   @media screen and (max-width: 420px) {
     .top-section .big-logo-wrapper {
       h1, h1.innov-battle {
-        font-size: 1.6rem;
+        font-size: 1.75rem;
+      }
+
+      .powered-by {
+        font-size: .9rem;
       }
     }
   }

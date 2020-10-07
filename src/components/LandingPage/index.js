@@ -17,7 +17,7 @@ export default function LandingPage() {
             </div>
             <div>
               <h1>Innovation Battlefield</h1>
-              <div>powered by <b>VORMENT</b></div>
+              <div className="powered-by">Powered by <b>VORMENT</b></div>
             </div>
           </div>
           <div className="big-desc">The biggest UX competition for college students</div>
@@ -26,13 +26,14 @@ export default function LandingPage() {
       </div>
       <div className="layout">
         <div className="lp-events">
-          <Link to="/battlefield-masterclass" className="event-one">
-            <h2>Battlefield & Masterclass</h2>
-            <h2>UX is cool.<br/>Let’s not make it boring.</h2>
+          <Link to="/battlefield" className="event-one">
+            <h2>Battlefield</h2>
           </Link>
-          <Link to="/exhibition" className="event-two">
+          <Link to="/masterclass" className="event-two">
+            <h2>Masterclass</h2>
+          </Link>
+          <Link to="/exhibition" className="event-three">
             <h2>Exhibition</h2>
-            <h2>Ideas won’t keep.<br/>Something must be done about them.</h2>
           </Link>
         </div>
         <div className="about-section">

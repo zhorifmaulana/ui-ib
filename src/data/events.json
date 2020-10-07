@@ -1,27 +1,28 @@
 [
   {
-    "slug": "battlefield-masterclass",
-    "name": "Battlefield & Masterclass",
+    "slug": "battlefield",
+    "name": "Battlefield",
     "shortdesc": "UX is cool. Let's not make it boring",
     "topBackground": "event_1_topbg.png",
     "color": "#31B057",
-    "longdesc": "Kompetisi UX dimana para UX talents dapat mengadu kemampuan dan mendapatkan kelas ekslusif UX design bersama para expert.",
+    "longdesc": "Kompetisi desain UX dimana para UX talents akan dikelompokkan menjadi beberapa tim. Masing-masing tim akan mempresentasikan hasil karya mereka di hadapan juri sesuai tema Masterclass sebelumnya.",
+    "registerUrl": "",
     "guidebookPath": "/guidebook",
-    "video": "",
+    "video": "https://www.youtube.com/watch?v=M40SBBsSCIA",
     "timelineImage": "event_1_timeline.png",
-    "whyTitle": "Why you should join the battlefield?",
+    "whyTitle": "Why You Should Join The Battlefield?",
     "whyDesc": [
       {
         "photo": "event_1_why_1.png",
-        "desc": "Won A Prize Worth Rp18 Mio"
+        "desc": "Meningkatkan kualitas portofolio kamu sebagai product developer"
       },
       {
         "photo": "event_1_why_2.png",
-        "desc": "Get A Scholarship worth Rp28 Mio"
+        "desc": "Koneksi menuju perusahaan impian"
       },
       {
         "photo": "event_1_why_3.png",
-        "desc": "Challenge yourself and build your resume !"
+        "desc": "Menemukan tim impian bagi yang sedang membangun startup"
       }
     ],
     "faqList": [
@@ -35,6 +36,94 @@
       },
       {
         "title": "After the battlefield",
+        "content": "Lorem ipsum dolor sit amet. alents dapat mengadu kemampuan dan mendapatka"
+      }
+    ]
+  },
+  {
+    "slug": "masterclass",
+    "name": "Masterclass",
+    "shortdesc": "Everyone can imagine. All in one place",
+    "topBackground": "event_2_topbg.png",
+    "color": "#107ADC",
+    "longdesc": "Kelas eksklusif bersama para mentor dari Dunia Dalam Desain (DDD). Materinya meliputi seluruh proses <b>Design Thinking: Emphatize, Define, Ideate, Wireframing, UX Writing, UI & Prototype,</b> dan <b>Validate</b>",
+    "registerUrl": "https://taman-siswa.com/class?code=ictc-plus",
+    "guidebookPath": "",
+    "video": "https://www.youtube.com/watch?v=M40SBBsSCIA",
+    "timelineImage": "event_2_timeline.png",
+    "whyTitle": "Why You Should Join The Masterclass?",
+    "whyDesc": [
+      {
+        "photo": "event_1_why_1.png",
+        "desc": "Belajar best practice knowledge langsung dari para mentor Dunia Dalam Desain"
+      },
+      {
+        "photo": "event_1_why_2.png",
+        "desc": "Bergabung dalam channel Slack Innovation Battlefield untuk berdiskusi tentang product design"
+      },
+      {
+        "photo": "event_1_why_3.png",
+        "desc": "Pembelajaran interaktif dan efektif tentang product design"
+      }
+    ],
+    "mentors": [
+      {
+        "photo": "event_2_mentor_1.png",
+        "name": "Tri Nugraha",
+        "position": "Product Designer at Gojek"
+      },
+      {
+        "photo": "event_2_mentor_2.png",
+        "name": "Muhammad Heikal",
+        "position": "Product Designer at Tiket"
+      },
+      {
+        "photo": "event_2_mentor_3.png",
+        "name": "Adze Ganesha",
+        "position": "Product Designer at Tokopedia"
+      },
+      {
+        "photo": "event_2_mentor_4.png",
+        "name": "Anton Chandra",
+        "position": "Product Ops at Gojek"
+      },
+      {
+        "photo": "event_2_mentor_5.png",
+        "name": "Angga Sundowo",
+        "position": "Interaction Design at Gojek"
+      },
+      {
+        "photo": "event_2_mentor_6.png",
+        "name": "Tyas Dwinda",
+        "position": "Researcher at Gojek"
+      },
+      {
+        "photo": "event_2_mentor_7.png",
+        "name": "Evan Clearesta",
+        "position": "Product Manager at Shopee SG"
+      },
+      {
+        "photo": "event_2_mentor_8.png",
+        "name": "Galih Pambudi",
+        "position": "UX Writer at Gojek"
+      },
+      {
+        "photo": "event_2_mentor_9.png",
+        "name": "Bunga Kariodimedjo",
+        "position": "UX Writer at Gojek"
+      }
+    ],
+    "faqList": [
+      {
+        "title": "Before the masterclass for audiences",
+        "content": "Meow meow meow meow. Why you should join the battlefield?"
+      },
+      {
+        "title": "D-Day masterclass for audiences",
+        "content": "Lorem ipsum dolor sit amet. UX is cool. Let's not make it meow"
+      },
+      {
+        "title": "After the masterclass for audiences",
         "content": "Lorem ipsum dolor sit amet. alents dapat mengadu kemampuan dan mendapatka"
       }
     ]

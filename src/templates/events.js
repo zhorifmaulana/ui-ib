@@ -37,6 +37,7 @@ export const query = graphql`
       shortdesc
       color
       longdesc
+      registerUrl
       guidebookPath
       video
       timelineImage
@@ -44,6 +45,11 @@ export const query = graphql`
       whyDesc {
         photo
         desc
+      }
+      mentors {
+        photo
+        name
+        position
       }
       faqList {
         title

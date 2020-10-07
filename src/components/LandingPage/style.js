@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-import lpMasterclass from "../../images/landing_battlefield_masterclass.png"
+import lpBattlefield from "../../images/landing_battlefield.png"
+import lpMasterclass from "../../images/landing_masterclass.png"
 import lpExhibition from "../../images/landing_exhibition.png"
 
 export const Styles = styled.div`
@@ -40,6 +41,10 @@ export const Styles = styled.div`
         margin-bottom: 1rem;
         letter-spacing: 3px;
       }
+
+      .powered-by {
+        font-size: 1.3rem;
+      }
     }
 
     .big-desc {
@@ -61,41 +66,33 @@ export const Styles = styled.div`
 
     h2 {
       font-size: 2rem;
-      font-weight: normal;
-    }
-
-    h2:first-of-type {
-      margin-bottom: .5rem;
       font-weight: bold;
+      margin-bottom: 1rem;
     }
 
-    h2:nth-of-type(2) {
-      margin-top: .5rem;
-    }
-
-    .event-one, .event-two {
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+    .event-one, .event-two, .event-three {
       border: 1px solid #000000;
       box-sizing: border-box;
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       border-radius: 30px;
       width: 50%;
-      padding-top: 160px;
+      padding-top: 140px;
       padding-left: 30px;
       padding-right: 30px;
+      margin-left: 10px;
+      margin-right: 10px;
     }
 
-    .event-one:hover, .event-two:hover {
+    .event-one:hover, .event-two:hover, .event-three:hover {
       opacity: 0.75;
     }
 
     .event-one {
-      background: url(${lpMasterclass}) no-repeat center center;
-      margin-left: 10px;
-      margin-right: 30px;
+      background: url(${lpBattlefield}) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
 
       h2:first-of-type {
         color: #31B057;
@@ -103,9 +100,23 @@ export const Styles = styled.div`
     }
 
     .event-two {
+      background: url(${lpMasterclass}) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+
+      h2:first-of-type {
+        color: #126CC0;
+      }
+    }
+    
+    .event-three {
       background: url(${lpExhibition}) no-repeat center center;
-      margin-left: 30px;
-      margin-right: 10px;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
 
       h2:first-of-type {
         color: #C25B21;
@@ -190,6 +201,25 @@ export const Styles = styled.div`
     }
   }
 
+  @media screen and (max-width: 1024px) {
+    .lp-events {
+      flex-wrap: wrap;
+
+      .event-one, .event-two, .event-three {
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        min-height: 200px;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+
+        h2 {
+          margin-top: .5rem;
+        }
+      }
+    }
+  }
+
   @media screen and (max-width: 768px) {
     .top-landing {
       .big-logo-wrapper {
@@ -202,26 +232,10 @@ export const Styles = styled.div`
           font-size: 3.5rem;
           max-width: 300px;
         }
-      }
-    }
 
-    .lp-events {
-      flex-wrap: wrap;
-
-      .event-one, .event-two {
-        width: 100%;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        min-height: 225px;
-      }
-
-      .event-one {
-        margin: 0;
-        margin-bottom: 1rem;
-      }
-
-      .event-two {
-        margin: 0;
+        .powered-by {
+          font-size: 1.1rem;
+        }
       }
     }
 

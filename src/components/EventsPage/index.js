@@ -5,35 +5,46 @@ import { Link } from "gatsby"
 import Image from "../image"
 import Button from "../Button"
 import MyFAQ from "../MyFAQ"
+import EventTopLanding from "./EventTopLanding"
+import MentorSection from "./MentorSection"
 
 import { Styles } from "./style"
 
 function EventsPage({ event }) {
+  let clickHereDesc = ""
+  let theButtons = <></>
+  if (event.registerUrl && event.guidebookPath) {
+    clickHereDesc = "CLICK HERE TO LEARN MORE AND REGISTER"
+    theButtons = (
+      <>
+        <Button href={event.registerUrl}>Register</Button>
+        <Button to={event.guidebookPath} className="secondary">Guidebook</Button>
+      </>
+    )
+  } else if (event.registerUrl) {
+    clickHereDesc = "REGISTER HERE"
+    theButtons = <Button href={event.registerUrl}>Register</Button>
+  } else if (event.guidebookPath) {
+    clickHereDesc = "CLICK HERE TO LEARN MORE"
+    theButtons = <Button to={event.guidebookPath}>Guidebook</Button>
+  }
+
   return (
     <Styles>
-      <div className="top-section">
-        <div className="big-logo-wrapper">
-          <div className="big-logo">
-            <Image imgName="IB_Logo_Big.png" alt="Innovation Battlefield" />
-          </div>
-          <div>
-            <h1 className="innov-battle">Innovation Battlefield</h1>
-            <h1 style={{ color: event.color }}>{event.name}</h1>
-            <div>powered by <b>VORMENT</b></div>
-          </div>
-        </div>
-        <div className="big-desc">{event.shortdesc}</div>
-      </div>
+      <EventTopLanding
+        name={event.name}
+        color={event.color}
+        shortdesc={event.shortdesc}
+        longdesc={event.longdesc}
+      />
       <div className="desc-section">
-        <div className="long-desc">{event.longdesc}</div>
         <div className="learn-more-register">
-          <div>CLICK HERE TO LEARN MORE AND REGISTER</div>
+          <div>{clickHereDesc}</div>
           <div className="btn-learn-register">
-            <Button>Register</Button>
-            <Button to={event.guidebookPath} className="secondary">Guidebook</Button>
+            {theButtons}
           </div>
           <div className="watch-video">
-            <Link to="/">
+            <Link href={event.video}>
               Watch the videos
               <div className="video-logo">
                 <Image imgName="event_video_play.jpg" alt="play" />
@@ -61,6 +72,9 @@ function EventsPage({ event }) {
           ))}
         </div>
       </div>
+      {event.mentors ?
+        <MentorSection mentors={event.mentors} />
+      : <></>}
       <div className="faq-section">
         <h1 className="colored">Frequently Asked Question</h1>
         <div>
