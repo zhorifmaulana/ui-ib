@@ -47,7 +47,45 @@ const Styles = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 1024px) {
+    .exhibition-desc {
+      .one-exhibition {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+
+        .left-exhibition {
+          width: 100%;
+          padding-left: 0;
+          padding-right: 0;
+
+          h1 {
+            margin-block-end: 0.33em;
+          }
+        }
+
+        .right-exhibition {
+          max-width: 600px;
+          width: calc(100% - 50px);
+          padding-left: 25px;
+          padding-right: 25px;
+          margin: auto;
+        }
+      }
+
+      .one-exhibition:nth-of-type(even) {
+        flex-direction: column-reverse;
+
+        .left-exhibition {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+  }
 `
+
+const HIDE_DULU = true
 
 function ExhibitionPage({ event }) {
   return (
@@ -59,18 +97,25 @@ function ExhibitionPage({ event }) {
         longdesc={event.longdesc}
       />
       <div className="exhibition-desc">
-        <h1 className="colored">Exhibition Day</h1>
-        {event.exhibitions.map(({ photo, title, desc }, index) => (
-          <div key={index} className="one-exhibition">
-            <div className="left-exhibition">
-              <h1>{title}</h1>
-              <div>{desc}</div>
-            </div>
-            <div className="right-exhibition">
-              <Image imgName={photo} alt={title} />
-            </div>
-          </div>
-        ))}
+        {
+          HIDE_DULU ?
+          <h1 className="colored">Coming Soon</h1>
+          :
+          <>
+            <h1 className="colored">Exhibition Day</h1>
+            {event.exhibitions.map(({ photo, title, desc }, index) => (
+              <div key={index} className="one-exhibition">
+                <div className="left-exhibition">
+                  <h1>{title}</h1>
+                  <div>{desc}</div>
+                </div>
+                <div className="right-exhibition">
+                  <Image imgName={photo} alt={title} />
+                </div>
+              </div>
+            ))}
+          </>
+        }
       </div>
     </Styles>
   )

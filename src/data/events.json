@@ -8,7 +8,7 @@
     "longdesc": "Kompetisi desain UX dimana para UX talents akan dikelompokkan menjadi beberapa tim. Masing-masing tim akan mempresentasikan hasil karya mereka di hadapan juri sesuai tema Masterclass sebelumnya.",
     "registerUrl": "",
     "guidebookPath": "/guidebook",
-    "video": "https://www.youtube.com/watch?v=M40SBBsSCIA",
+    "video": "",
     "timelineImage": "event_1_timeline.png",
     "whyTitle": "Why You Should Join The Battlefield?",
     "whyDesc": [
@@ -28,15 +28,15 @@
     "faqList": [
       {
         "title": "Before the battlefield",
-        "content": "Meow meow meow meow. Why you should join the battlefield?"
+        "content": "Coming soon"
       },
       {
         "title": "D-Day battlefield",
-        "content": "Lorem ipsum dolor sit amet. UX is cool. Let's not make it meow"
+        "content": "Coming soon"
       },
       {
         "title": "After the battlefield",
-        "content": "Lorem ipsum dolor sit amet. alents dapat mengadu kemampuan dan mendapatka"
+        "content": "Coming soon"
       }
     ]
   },
@@ -46,23 +46,23 @@
     "shortdesc": "Everyone can imagine. All in one place",
     "topBackground": "event_2_topbg.png",
     "color": "#107ADC",
-    "longdesc": "Kelas eksklusif bersama para mentor dari Dunia Dalam Desain (DDD). Materinya meliputi seluruh proses <b>Design Thinking: Emphatize, Define, Ideate, Wireframing, UX Writing, UI & Prototype,</b> dan <b>Validate</b>",
-    "registerUrl": "https://taman-siswa.com/class?code=ictc-plus",
+    "longdesc": "Kelas eksklusif bersama para mentor dari Dunia Dalam Desain (DDD). Materinya meliputi seluruh proses <b>Design Thinking: Emphatize, Define, Ideate, Wireframing, UX Writing, UI &amp; Prototype,</b> dan <b>Validate</b>",
+    "registerUrl": "",
     "guidebookPath": "",
-    "video": "https://www.youtube.com/watch?v=M40SBBsSCIA",
+    "video": "",
     "timelineImage": "event_2_timeline.png",
     "whyTitle": "Why You Should Join The Masterclass?",
     "whyDesc": [
       {
-        "photo": "event_1_why_1.png",
+        "photo": "event_2_why_1.png",
         "desc": "Belajar best practice knowledge langsung dari para mentor Dunia Dalam Desain"
       },
       {
-        "photo": "event_1_why_2.png",
+        "photo": "event_2_why_2.png",
         "desc": "Bergabung dalam channel Slack Innovation Battlefield untuk berdiskusi tentang product design"
       },
       {
-        "photo": "event_1_why_3.png",
+        "photo": "event_2_why_3.png",
         "desc": "Pembelajaran interaktif dan efektif tentang product design"
       }
     ],
@@ -116,15 +116,15 @@
     "faqList": [
       {
         "title": "Before the masterclass for audiences",
-        "content": "Meow meow meow meow. Why you should join the battlefield?"
+        "content": "Coming soon"
       },
       {
         "title": "D-Day masterclass for audiences",
-        "content": "Lorem ipsum dolor sit amet. UX is cool. Let's not make it meow"
+        "content": "Coming soon"
       },
       {
         "title": "After the masterclass for audiences",
-        "content": "Lorem ipsum dolor sit amet. alents dapat mengadu kemampuan dan mendapatka"
+        "content": "Coming soon"
       }
     ]
   }

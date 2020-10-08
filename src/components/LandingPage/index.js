@@ -21,10 +21,11 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="big-desc">The biggest UX competition for college students</div>
-          <Button className="orange">Register</Button>
+          <Button className="orange" to="#events">Register</Button>
         </div>
       </div>
       <div className="layout">
+        <div id="events" style={{ position: "relative", bottom: "80px" }} />
         <div className="lp-events">
           <Link to="/battlefield" className="event-one">
             <h2>Battlefield</h2>
@@ -40,10 +41,11 @@ export default function LandingPage() {
           <div>
             <h2>About Innovation Battlefield</h2>
             <p>
-              Innovation Battlefield 2.0 merupakan kompetisi UX sekaligus ajang cari jodoh bagi para UX designer dengan company yang sedang membutuhkan talent ini. Rangkaian acara terdiri atas Masterclass, Battlefield, dan Exhibition yang diadakan dalam kurun waktu kurang lebih 1,5 bulan. Innovation Battlefield 2.0 akan diisi oleh para expertise dari Dunia Dalam Desain yang akan menjadi mentor sekaligus pengisi materi selama kompetisi dan kelas UX berlangsung.
-            </p>
-            <p>
-              Tidak hanya diperuntukkan kepada UX Talents, Innovation Battlefield 2.0 juga dapat diikuti oleh peserta umum yang hendak belajar UX tetapi tidak ingin mengikuti perlombaannya. Mereka dapat menyaksikan sekaligus belajar bersama peserta UX competition yang sedang bertanding. Innovation Battlefield 2.0 diselenggarakan dengan total 8 episode. Kompetisi ini akan mengeliminasi 2 tim tiap minggu hingga tersisa 2 tim di final.
+              Innovation Battlefield 2.0 merupakan kompetisi desain UX dengan rangkaian acara yang terdiri dari <b>Masterclass, Battlefield, dan Exhibition.</b><br/>
+              <br/>
+              Kompetisi ini dapat diikuti oleh UX Researcher, UX Designer, UX Writer, dan UI Designer level pemula yang baru ingin memulai karirnya di dunia <i>product design.</i><br/>
+              <br/>
+              Dengan juri dan mentor dari para <i>expert</i> dari <i>company</i> paing adaptif dan berdampak di Indonesia, Innovation Battlefield akan menjadi ajang pertempuran untuk menemukan <b>Innovation Army</b> terbaik yang pernah ada!
             </p>
           </div>
           <div>
@@ -82,7 +84,7 @@ export default function LandingPage() {
               Kami berbagi cerita, melakukan validasi ide, dan mempertemukan pembaca dengan founder terbaik.  Kami percaya, dengan berbagi cerita akan membawa kami ke dunia yang lebih dekat.
             </p>
             <p>
-              <Button href="https://www.instagram.com/openinnovation.magz/" className="orange">
+              <Button href="https://www.instagram.com/openinnovation.magz/" className="orange" newPage>
                 Read on Instagram
               </Button>
             </p>

@@ -56,6 +56,12 @@ const Button = props => {
           <StyledButton {...props}>{props.children}</StyledButton>
         </a>
       )
+    } else if (props.newPage) {
+      return (
+        <a href={props.href} target="_blank" rel="noopener noreferrer">
+          <StyledButton {...props}>{props.children}</StyledButton>
+        </a>
+      )
     } else {
       return (
         <a href={props.href}>
@@ -70,6 +76,7 @@ const Button = props => {
 Button.propTypes = {
   to: PropTypes.string,
   href: PropTypes.string,
+  newPage: PropTypes.bool,
   children: PropTypes.string,
 }
 

@@ -87,14 +87,25 @@ export const Styles = styled.div`
   }
 
   @media screen and (max-width: 550px) {
+    .timeline-section {
+      overflow-x: hidden;
+
+      .timeline {
+        margin-left: -40px;
+        margin-right: -40px;
+      }
+    }
+
     .why-section {
       .why-list {
         flex-wrap: wrap;
 
         .one-why {
-          width: 80%;
+          width: calc(50% - 16px);
+          padding: 8px;
+
           h2 {
-            font-size: 1.25rem;
+            font-size: 1rem;
           }
         }
       }

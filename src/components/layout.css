@@ -44,12 +44,12 @@ a:hover {
   opacity: 0.75;
 }
 
-p {
-  line-height: 1.3;
+div, p {
+  letter-spacing: .25px;
 }
 
-#all-wrapper {
-  padding-top: 10px;
+p {
+  line-height: 1.3;
 }
 
 .layout {

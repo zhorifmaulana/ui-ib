@@ -44,6 +44,10 @@ export const Styles = styled.div`
 
       .powered-by {
         font-size: 1.3rem;
+
+        b {
+          font-style: normal;
+        }
       }
     }
 
@@ -199,6 +203,14 @@ export const Styles = styled.div`
     button {
       margin-top: .5rem;
     }
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  b {
+    font-style: italic;
   }
 
   @media screen and (max-width: 1024px) {

@@ -14,6 +14,11 @@ import ChevronRightIcon from '@material-ui/icons/ChevronLeft'
 import Image from "./image"
 
 const StyledHeader = styled.header`
+  position: sticky;
+  top: 0;
+  background-color: black;
+  z-index: 12;
+
   .navbar-flex {
     display: flex;
     justify-content: space-between;
@@ -21,7 +26,8 @@ const StyledHeader = styled.header`
     max-width: 1150px;
     padding-left: 24px;
     padding-right: 24px;
-    padding-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin: auto;
 
     .logo-flex {
@@ -109,7 +115,7 @@ const Header = () => {
         </Link>
         <div className="navbar-right">
           {navList.map(({ name, to }, index) => (
-            <Link to={to} key={index}>
+            <Link to={to} key={index} activeStyle={{ color: "white" }}>
               {name}
             </Link>
           ))}

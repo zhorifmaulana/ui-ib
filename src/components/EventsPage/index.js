@@ -43,14 +43,16 @@ function EventsPage({ event }) {
           <div className="btn-learn-register">
             {theButtons}
           </div>
-          <div className="watch-video">
-            <Link href={event.video}>
-              Watch the videos
-              <div className="video-logo">
-                <Image imgName="event_video_play.jpg" alt="play" />
-              </div>
-            </Link>
-          </div>
+          {event.video ?
+            <div className="watch-video">
+              <Link href={event.video}>
+                Watch the videos
+                <div className="video-logo">
+                  <Image imgName="event_video_play.jpg" alt="play" />
+                </div>
+              </Link>
+            </div>
+          : <></>}
         </div>
       </div>
       <div className="timeline-section">
