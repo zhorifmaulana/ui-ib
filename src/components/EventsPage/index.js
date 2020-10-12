@@ -17,13 +17,13 @@ function EventsPage({ event }) {
     clickHereDesc = "CLICK HERE TO LEARN MORE AND REGISTER"
     theButtons = (
       <>
-        <Button href={event.registerUrl}>Register</Button>
+        <Button href={event.registerUrl} newPage>Register</Button>
         <Button to={event.guidebookPath} className="secondary">Guidebook</Button>
       </>
     )
   } else if (event.registerUrl) {
     clickHereDesc = "REGISTER HERE"
-    theButtons = <Button href={event.registerUrl}>Register</Button>
+    theButtons = <Button href={event.registerUrl} newPage>Register</Button>
   } else if (event.guidebookPath) {
     clickHereDesc = "CLICK HERE TO LEARN MORE"
     theButtons = <Button to={event.guidebookPath}>Guidebook</Button>

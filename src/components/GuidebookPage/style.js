@@ -128,6 +128,10 @@ export const Styles = styled.div`
       .one-why {
         width: calc(33% - 24px);
         padding: 12px;
+
+        h2 {
+          font-size: 1.3em;
+        }
       }
     }
   }
@@ -150,7 +154,7 @@ export const Styles = styled.div`
           padding: 8px;
 
           h2 {
-            font-size: 1rem;
+            font-size: 0.9em;
           }
         }
       }

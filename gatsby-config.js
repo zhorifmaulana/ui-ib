@@ -21,6 +21,13 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        pure: true,
+        displayName: process.env.NODE_ENV !== "production",
+      },
+    },
     `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

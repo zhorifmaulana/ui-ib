@@ -27,16 +27,16 @@
     ],
     "faqList": [
       {
-        "title": "Before the battlefield",
-        "content": "Coming soon"
+        "title": "Apakah Battlefield diselenggarakan secara daring?",
+        "content": "Ya, Masterclass dan Battlefield akan dilaksanakan secara daring melalui Zoom Webinar."
       },
       {
-        "title": "D-Day battlefield",
-        "content": "Coming soon"
+        "title": "Siapa aja yang bisa mengikuti Battlefield?",
+        "content": "Battlefield dapat diikuti oleh UX Researcher, UX Writer, UX Designer, dan UI Designer yang ingin memulai karirnya di bidang product design."
       },
       {
-        "title": "After the battlefield",
-        "content": "Coming soon"
+        "title": "Bagaimana format kompetisi Battlefield?",
+        "content": "Peserta yang lolos ke 24 besar akan dimasukan ke dalam 6 tim yang beranggotakan 4 orang. Battlefield dilaksanakan dalam 7 episode dengan sistem klasemen. Tim dengan perolehan nilai tertinggi dan memuncaki klasemen akan memenangkan perlombaan."
       }
     ]
   },
@@ -47,7 +47,7 @@
     "topBackground": "event_2_topbg.png",
     "color": "#107ADC",
     "longdesc": "Kelas eksklusif bersama para mentor dari Dunia Dalam Desain (DDD). Materinya meliputi seluruh proses <b>Design Thinking: Emphatize, Define, Ideate, Wireframing, UX Writing, UI &amp; Prototype,</b> dan <b>Validate</b>",
-    "registerUrl": "",
+    "registerUrl": "https://bit.ly/Tiket-IB",
     "guidebookPath": "",
     "video": "",
     "timelineImage": "event_2_timeline.png",
@@ -115,16 +115,16 @@
     ],
     "faqList": [
       {
-        "title": "Before the masterclass for audiences",
-        "content": "Coming soon"
+        "title": "Apa itu perbedaan contestant dan audience?",
+        "content": "Contestant adalah peserta kompetisi desain UX yang mendaftar secara individu dan dikelompokkan menjadi 6 tim. Sementara, audience adalah penonton yang dapat mengikuti Masterclass dan menonton pertandingan Battlefield secara langsung."
       },
       {
-        "title": "D-Day masterclass for audiences",
-        "content": "Coming soon"
+        "title": "Bagaimana cara mengikuti Masterclass?",
+        "content": "Jika kamu adalah contestant yang lolos ke 24 besar, kami akan memberikan link meeting melaui email masing-masing. Bagi audience, dapat melakukan registrasi dengan membeli tiket regular maupun tiket bulk di bit.ly/Tiket-IB."
       },
       {
-        "title": "After the masterclass for audiences",
-        "content": "Coming soon"
+        "title": "Siapa aja yang bisa mengikuti Masterclass?",
+        "content": "Contestant yang lolos ke 24 besar diwajibkan untuk mengikuti Masterclass sebelum Battlefield dilaksanakan. Sementara, audience dibuka untuk umum."
       }
     ]
   }

@@ -29,10 +29,9 @@ const Footer = () => (
         <Image imgName="sponsor_dunia_dalam_desain.png" alt="Dunia dalam Desain" />
       </div>
     </div>
-    <h2>Sponsored By</h2>
+    {/* <h2>Sponsored By</h2>
     <div style={{ height: "100px" }}>
-
-    </div>
+    </div> */}
   </StyledFooter>
 )
 
