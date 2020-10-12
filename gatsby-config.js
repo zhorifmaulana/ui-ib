@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Innovation Battlefield`,
+    description: `Innovation Battlefield 2.0 merupakan kompetisi desain UX dengan rangkaian acara yang terdiri dari Masterclass, Battlefield, dan Exhibition.`,
+    author: `@darklordace`,
     viewPortScale: `width=device-width, initial-scale=0.9, shrink-to-fit=no`,
   },
   plugins: [
