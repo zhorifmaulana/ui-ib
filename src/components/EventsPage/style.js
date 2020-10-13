@@ -73,6 +73,10 @@ export const Styles = styled.div`
       .one-why {
         width: 33%;
         padding: 12px;
+
+        h2 {
+          font-weight: normal;
+        }
       }
     }
   }
@@ -108,18 +112,6 @@ export const Styles = styled.div`
             font-size: 1rem;
           }
         }
-      }
-    }
-  }
-
-  @media screen and (max-width: 420px) {
-    .top-section .big-logo-wrapper {
-      h1, h1.innov-battle {
-        font-size: 1.75rem;
-      }
-
-      .powered-by {
-        font-size: .9rem;
       }
     }
   }

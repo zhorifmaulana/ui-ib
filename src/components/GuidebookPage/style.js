@@ -54,6 +54,7 @@ export const Styles = styled.div`
         height: 50px;
         border: 2px solid #196ab3;
         font-size: 1.4rem;
+        cursor: pointer;
 
         div {
           width: 100%;
@@ -65,15 +66,18 @@ export const Styles = styled.div`
       }
 
       .guidebook-btn:first-of-type {
-        background: linear-gradient(90deg, #0858A1 -4.2%, #6EA6D9 137%);
         border-radius: 7px 0px 0px 7px;
         border-right: none;
-        color: black;
       }
 
       .guidebook-btn:last-of-type {
         border-radius: 0px 7px 7px 0px;
         border-left: none;
+      }
+
+      .guidebook-btn.chosen {
+        background: linear-gradient(90deg, #0858A1 -4.2%, #6EA6D9 137%);
+        color: black;
       }
     }
 
@@ -131,6 +135,7 @@ export const Styles = styled.div`
 
         h2 {
           font-size: 1.3em;
+          font-weight: normal;
         }
       }
     }

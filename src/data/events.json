@@ -2,7 +2,7 @@
   {
     "slug": "battlefield",
     "name": "Battlefield",
-    "shortdesc": "UX is cool. Let's not make it boring",
+    "shortdesc": "UX is cool. Let's not make it boring.",
     "topBackground": "event_1_topbg.png",
     "color": "#31B057",
     "longdesc": "Kompetisi desain UX dimana para UX talents akan dikelompokkan menjadi beberapa tim. Masing-masing tim akan mempresentasikan hasil karya mereka di hadapan juri sesuai tema Masterclass sebelumnya.",
@@ -43,7 +43,7 @@
   {
     "slug": "masterclass",
     "name": "Masterclass",
-    "shortdesc": "Everyone can imagine. All in one place",
+    "shortdesc": "Everyone can imagine. All in one place.",
     "topBackground": "event_2_topbg.png",
     "color": "#107ADC",
     "longdesc": "Kelas eksklusif bersama para mentor dari Dunia Dalam Desain (DDD). Materinya meliputi seluruh proses <b>Design Thinking: Emphatize, Define, Ideate, Wireframing, UX Writing, UI &amp; Prototype,</b> dan <b>Validate</b>",

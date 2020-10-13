@@ -20,8 +20,8 @@ export default function LandingPage() {
               <div className="powered-by">Powered by <b>VORMENT</b></div>
             </div>
           </div>
-          <div className="big-desc">The biggest UX competition for college students</div>
-          <Button className="orange" to="#events">Register</Button>
+          <div className="big-desc">Bring the innovation fire and set the night alight!</div>
+          <Button className="orange" to="#events">Main Event</Button>
         </div>
       </div>
       <div className="layout">

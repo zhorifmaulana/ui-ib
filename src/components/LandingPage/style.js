@@ -43,7 +43,7 @@ export const Styles = styled.div`
       }
 
       .powered-by {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
 
         b {
           font-style: normal;
@@ -246,7 +246,7 @@ export const Styles = styled.div`
         }
 
         .powered-by {
-          font-size: 1.1rem;
+          font-size: 1.3rem;
         }
       }
     }
@@ -303,10 +303,16 @@ export const Styles = styled.div`
     }
   }
 
-  @media screen and (max-width: 450px) {
-    .top-landing .big-logo-wrapper h1 {
-      font-size: 2.4rem;
-      max-width: 230px;
+  @media screen and (max-width: 500px) {
+    .top-landing .big-logo-wrapper {
+      h1 {
+        font-size: 10vw;
+        max-width: 230px;
+      }
+
+      .powered-by {
+        font-size: 4vw;
+      }
     }
   }
 `

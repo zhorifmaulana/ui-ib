@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
 import Image from "../image"
 import { Styles, SmallGap } from "./style"
 
 function GuidebookPage({ whyList }) {
+  const [smallNav, setSmallNav] = useState(true)
+
   return (
     <Styles>
       <div className="top-section">
@@ -13,35 +15,58 @@ function GuidebookPage({ whyList }) {
       </div>
       <div className="guidebook-layout">
         <div className="guidebook-btn-list">
-          <div className="guidebook-btn">
+          <div
+            className={`guidebook-btn ${smallNav ? "chosen" : ""}`}
+            onClick={() => setSmallNav(true)}
+          >
             <div>
               Syarat &amp; Ketentuan
             </div>
           </div>
-          <div className="guidebook-btn">
+          <div
+            className={`guidebook-btn ${smallNav ? "" : "chosen"}`}
+            onClick={() => setSmallNav(false)}
+          >
             <div>
               Mekanisme
             </div>
           </div>
         </div>
-        <p className="guidebook-content">
-          <ul>
-            <li>Peserta mendaftar secara individu</li>
-            <li>Peserta dapat berasal dari background:<br/><b><SmallGap/>UI Designer<br/><SmallGap/>UX Designer<br/><SmallGap/>UX Researcher<br/><SmallGap/>UX Writer</b></li>
-            <li>Pendaftaran dibuka tanggal 14 September - 26 September 2020 melalui website resmi Innovation Battlefield 2.0 dan juga dapat di akses di link pendaftaran: bit.ly/IB20-Form</li>
-            <li>File pengiriman pendaftaran:<br/><SmallGap/>Resume dan Portofolio</li>
-            <li>Selanjutnya peserta yang lolos ke 24 besar akan dimasukkan ke dalam 6 tim. Masing-masing tim terdiri atas 4 anggota.</li>
-            <li>Lomba akan diadakan dengan format tim dan detail anggota tim akan diumumkan tanggal 7 Oktober 2020 melalui email dan/atau media sosial Innovation Battlefield</li>
-            <li>Setelah pengumuman, peserta diminta untuk melakukan pembayaran pendaftaran sebesar Rp 2.940.000 yang dapat dicicil selama tiga kali pembayaran.</li>
-            <li>Innovation Battlefield akan dilaksanakan menggunakan aplikasi Zoom Webinar</li>
-            <li>6 (enam) tim yang telah terbentuk akan mendapatkan kesempatan bersaing di Battlefield dengan sistem kompetisi yang terdiri dari 7 episode, yaitu <b>Emphatize, Define, Ideate, Wireframe, UX Writing, Prototype, dan Validate.</b></li>
-            <li>Kompetisi dilaksanakan mulai tanggal 12 Oktober - 30 November 2020 pukul 19.00 - 22.00 setiap hari Senin dan Kamis.</li>
-            <li>Sebelum <b>Battlefield</b> dilaksanakan, peserta wajib mengikuti sesi <b>Masterclass</b> dari mentor.</li>
-            <li><b>Battlefield</b> dilaksanakan dalam 7 episode dengan sistem klasemen.</li>
-            <li>Dalam satu minggu diadakan 1 episode dengan 2 rangkaian acara, <b>Masterclass dan Battlefield</b></li>
-            <li>Dari setiap <b>Battlefield</b>, setiap tim akan dinilai oleh para juri. Tim dengan perolehan nilai tertinggi dan memuncaki klasemen akan memenangkan perlombaan</li>
-          </ul>
-        </p>
+        {
+          smallNav ?
+          <p className="guidebook-content">
+            <ul>
+              <li>Innovation Battlefield 2.0 terbuka untuk:<br/><b><SmallGap/>UI Designer<br/><SmallGap/>UX Designer<br/><SmallGap/>UX Researcher<br/><SmallGap/>UX Writer</b></li>
+              <li>Diselenggarakan dari tanggal 14 September - 30 November 2020</li>
+              <li>Peserta dapat mengikuti Innovation Battlefield 2.0 secara individu</li>
+              <li>Pendaftaran dilakukan melalui website Innovation Battlefield 2.0 atau melalui link pendaftaran: bit.ly/IB20-Form</li>
+              <li>Biaya pendaftaran sebesar Rp 2.940.000,  dapat mencicil selama 3 kali pembayaran</li>
+              <li>Peserta diwajibkan mengikuti seluruh rangkaian kegiatan Innovation Battlefield 2.0</li>
+              <li>Peserta dilarang menyebarluaskan segala macam bentuk materi atau e-book yang diberikan selama acara secara bebas</li>
+              <li>Hadiah berupa uang tunai senilai jutaan rupiah</li>
+              <li>Penyelenggara tidak bertanggung jawab atas isi yang dibuat oleh Peserta yang mengikuti Innovation Battlefield 2.0</li>
+            </ul>
+          </p>
+          :
+          <p className="guidebook-content">
+            <ul>
+              <li>Peserta mendaftar secara individu</li>
+              <li>Peserta dapat berasal dari background:<br/><b><SmallGap/>UI Designer<br/><SmallGap/>UX Designer<br/><SmallGap/>UX Researcher<br/><SmallGap/>UX Writer</b></li>
+              <li>Pendaftaran dibuka tanggal 14 September - 26 September 2020 melalui website resmi Innovation Battlefield 2.0 dan juga dapat di akses di link pendaftaran: bit.ly/IB20-Form</li>
+              <li>File pengiriman pendaftaran:<br/><SmallGap/>Resume dan Portofolio</li>
+              <li>Selanjutnya peserta yang lolos ke 24 besar akan dimasukkan ke dalam 6 tim. Masing-masing tim terdiri atas 4 anggota.</li>
+              <li>Lomba akan diadakan dengan format tim dan detail anggota tim akan diumumkan tanggal 7 Oktober 2020 melalui email dan/atau media sosial Innovation Battlefield</li>
+              <li>Setelah pengumuman, peserta diminta untuk melakukan pembayaran pendaftaran sebesar Rp 2.940.000 yang dapat dicicil selama tiga kali pembayaran.</li>
+              <li>Innovation Battlefield akan dilaksanakan menggunakan aplikasi Zoom Webinar</li>
+              <li>6 (enam) tim yang telah terbentuk akan mendapatkan kesempatan bersaing di Battlefield dengan sistem kompetisi yang terdiri dari 7 episode, yaitu <b>Emphatize, Define, Ideate, Wireframe, UX Writing, Prototype, dan Validate.</b></li>
+              <li>Kompetisi dilaksanakan mulai tanggal 12 Oktober - 30 November 2020 pukul 19.00 - 22.00 setiap hari Senin dan Kamis.</li>
+              <li>Sebelum <b>Battlefield</b> dilaksanakan, peserta wajib mengikuti sesi <b>Masterclass</b> dari mentor.</li>
+              <li><b>Battlefield</b> dilaksanakan dalam 7 episode dengan sistem klasemen.</li>
+              <li>Dalam satu minggu diadakan 1 episode dengan 2 rangkaian acara, <b>Masterclass dan Battlefield</b></li>
+              <li>Dari setiap <b>Battlefield</b>, setiap tim akan dinilai oleh para juri. Tim dengan perolehan nilai tertinggi dan memuncaki klasemen akan memenangkan perlombaan</li>
+            </ul>
+          </p>
+        }
         <div className="deskripsi-tambahan">
           <h1>Who We Are</h1>
           <p>Innovation Battlefield merupakan kompetisi UI/UX dengan rangkaian acara terdiri dari <b>Masterclass, Battlefield, dan Exhibition.</b> Innovation Battlefield akan dipandu oleh para expertise dari <b>Dunia Dalam Desain</b> yang akan menjadi mentor sekaligus pengisi materi selama kompetisi berlangsung.</p>

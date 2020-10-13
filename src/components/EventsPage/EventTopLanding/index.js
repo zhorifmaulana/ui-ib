@@ -38,7 +38,11 @@ const Styles = styled.div`
       }
 
       .powered-by {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+
+        b {
+          font-style: normal;
+        }
       }
     }
 
@@ -68,33 +72,34 @@ const Styles = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    .top-section .big-logo-wrapper h1 {
-      font-size: 3.5rem;
-      max-width: 300px;
-    }
-  }
-
-  @media screen and (max-width: 550px) {
     .top-section {
       .big-logo-wrapper {
         .big-logo {
           width: 180px;
           margin-right: 1rem;
-          padding-left: .5rem;
         }
 
         h1 {
-          font-size: 2.5rem;
-          max-width: 225px;
+          font-size: 3.5rem;
+          max-width: 300px;
         }
 
         .powered-by {
-          font-size: 1.1rem;
+          font-size: 1.3rem;
         }
       }
+    }
+  }
 
-      .big-desc {
-        font-size: 1.4rem;
+  @media screen and (max-width: 500px) {
+    .top-section .big-logo-wrapper {
+      h1 {
+        font-size: 10vw;
+        max-width: 230px;
+      }
+
+      .powered-by {
+        font-size: 4vw;
       }
     }
     
