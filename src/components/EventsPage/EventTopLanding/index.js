@@ -23,6 +23,8 @@ const Styles = styled.div`
       text-align: left;
       justify-content: center;
       align-items: center;
+      padding-left: 10px;
+      padding-right: 10px;
 
       .big-logo {
         width: 215px;

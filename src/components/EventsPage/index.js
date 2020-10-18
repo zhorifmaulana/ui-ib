@@ -7,6 +7,7 @@ import Button from "../Button"
 import MyFAQ from "../MyFAQ"
 import EventTopLanding from "./EventTopLanding"
 import MentorSection from "./MentorSection"
+import ScoreboardBattlefield from "./ScoreboardBattlefield"
 
 import { Styles } from "./style"
 
@@ -62,7 +63,7 @@ function EventsPage({ event }) {
         </div>
       </div>
       <div className="why-section">
-        <h1 className="colored">Why you should join the battlefield?</h1>
+        <h1 className="colored">Why You Should Join The {event.name}?</h1>
         <div className="why-list">
           {event.whyDesc.map(({ photo, desc }, index) => (
             <div key={index} className="one-why">
@@ -74,6 +75,9 @@ function EventsPage({ event }) {
           ))}
         </div>
       </div>
+      {event.slug === "battlefield" ?
+        <ScoreboardBattlefield />
+      : <></>}
       {event.mentors ?
         <MentorSection mentors={event.mentors} />
       : <></>}
