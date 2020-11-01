@@ -63,7 +63,7 @@ const Styles = styled.div`
   }
 `
 
-const HIDE_DULU = true
+const HIDE_DULU = false
 
 function ScoreboardBattlefield() {
   const [scoreboard, setScoreboard] = useState([])
@@ -75,20 +75,20 @@ function ScoreboardBattlefield() {
     numberOfMatch = Math.max(numberOfMatch, person.score.length)
   })
 
-  for (let i = 1; i < numberOfMatch; ++i) {
-    let toAdd = String(i)
-    if (i === 1) {
-      toAdd += "st"
-    } else if (i === 2) {
-      toAdd += "nd"
-    } else if (i === 3) {
-      toAdd += "rd"
-    } else {
-      toAdd += "th"
-    }
-    tableHeaders.push(toAdd)
-  }
-  tableHeaders.push("Skor")
+  // for (let i = 1; i < numberOfMatch; ++i) {
+  //   let toAdd = String(i)
+  //   if (i === 1) {
+  //     toAdd += "st"
+  //   } else if (i === 2) {
+  //     toAdd += "nd"
+  //   } else if (i === 3) {
+  //     toAdd += "rd"
+  //   } else {
+  //     toAdd += "th"
+  //   }
+  //   tableHeaders.push(toAdd)
+  // }
+  // tableHeaders.push("Skor")
 
   useEffect(() => {
     getScoreboard().then(data => {
@@ -130,10 +130,10 @@ function ScoreboardBattlefield() {
           {scoreboard.map((person, idxRow) => (
             <tr key={idxRow}>
               <td>{idxRow + 1}</td>
-              <td>{person.name}</td>
-              {person.score.map((score, idxCol) => (
+              <td style={{ width: "200px" }}>{person.name}</td>
+              {/* {person.score.map((score, idxCol) => (
                 <td key={idxCol}>{score.value}</td>
-              ))}
+              ))} */}
             </tr>
           ))}
         </table>
