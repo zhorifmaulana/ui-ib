@@ -46,7 +46,7 @@ function EventsPage({ event }) {
           </div>
           {event.video ?
             <div className="watch-video">
-              <Link href={event.video}>
+              <Link href={event.video} target="_blank" rel="noopener noreferrer">
                 Watch the videos
                 <div className="video-logo">
                   <Image imgName="event_video_play.jpg" alt="play" />
