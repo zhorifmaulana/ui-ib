@@ -118,7 +118,7 @@ function ScoreboardBattlefield() {
       <div className="match-table">
         <table>
           <tr>
-            <th colspan="20">MATCH</th>
+            <th colspan="20">WEEK {numberOfMatch - 1}</th>
           </tr>
           <tr>
             {tableHeaders.map((val, index) => (
